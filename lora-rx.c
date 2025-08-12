@@ -31,7 +31,7 @@ int main()
         while (1)
             sleep_ms(1000);
     }
-    // Mesma config do seu lora-tx.c (915 MHz, BW125k, SF7, CR4/5, CRC on, preâmbulo 8, sync 0x34)
+    // (915 MHz, BW125k, SF7, CR4/5, CRC on, preâmbulo 8, sync 0x34)
     if (!lora_init_915(BANDWIDTH_125K, SPREADING_7, ERROR_CODING_4_5,
                        true, PA_MED_BOOST, 8, 0x34))
     {
